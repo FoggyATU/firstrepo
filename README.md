@@ -1,1 +1,1 @@
-thanks for reading me
+Hello this is my first repo
