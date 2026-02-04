@@ -20,6 +20,8 @@
   by Mary Loftus
   modified 22 Jan 2026
   by Oleksandr Bolzhelarskyi
+  modified 04 Feb 2026
+  by Ignacy Bierowski
 
   This example code is in the public domain.
 
@@ -35,11 +37,13 @@ void setup() {
 }
 
 // the loop function runs over and over again forever
+int flashDelay = 1;
 void loop() {
   digitalWrite(LED, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(500);                      // wait for half a second
+  delay(flashDelay);
   digitalWrite(LED, LOW);   // turn the LED off by making the voltage LOW
-  delay(500);                      // wait for half a second
+  delay(flashDelay);
+  flashDelay ++; // time between flashes will get longer and longer
 
 }
 
